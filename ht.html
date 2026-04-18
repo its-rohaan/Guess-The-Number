@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        /* background: linear-gradient(45deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+      animation: gradientShift 8s ease infinite;
+           background-repeat: no-repeat; */
+           /* height: 100vh; */
+        }
+    body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #667eea);
+  
+  background-size: 300% 300%;
+  animation: cyberFlow 14s ease infinite;
+}
+
+@keyframes cyberFlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+        .main{
+        background-color: transparent;
+        width:450px;
+        height: 500px;
+        padding: 200px;
+        margin: auto;
+       
+        }
+        .answer-box{
+            border: none;
+            width: 500px;
+         background: linear-gradient(45deg, #ea78a8, #4ea9cd);
+            color: rgb(255, 255, 255);
+            margin: auto;
+            height: 30px;
+            padding: 30px;
+            font-size: 25px;
+            text-align: center;
+            gap: 20px;
+        }
+        #write{
+            margin: 20px;
+             font-size: 24px;
+      padding: 15px;
+      border: none;
+      border-radius: 15px;
+      width: 220px;
+      text-align: center;
+      background: linear-gradient(45deg, #ea78a8, #4ea9cd);
+      color: white;
+      font-weight: bold;
+      outline: none;
+        }
+        .onwer{
+            height: 100px;
+            padding: 100px;
+            width: 700px;
+            
+            transform: translateX(-200px);
+
+        }
+        .oner{
+            width: 500px;
+            padding: 50px;
+            transform: translateX(-50px);
+            border-radius: 30px 30px 0px 0px;
+            text-align: center;
+        }
+        .tittle{
+            color: white;
+            font-size: 40px;
+        }
+        #check{
+             background: linear-gradient(45deg, #ff9a9e, #fecfef);
+      border: none;
+      color: #333;
+      padding: 15px 30px;
+      margin: 10px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        #checker{
+             background: linear-gradient(45deg, #ff9a9e, #fecfef);
+      border: none;
+      color: #333;
+      padding: 15px 30px;
+      margin: 10px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="oner">
+            <div class="tittle">
+                🎯 Guess the Number (1-10)
+            </div>
+            <input onchange="myFunction(value)" type="number" id="write"><br>
+            <button id="check"> 🔍 Guess!</button>
+            <button id="checker"> 🔍 Even Odd!</button>
+        </div>
+        <div class="onwer">
+
+            <div class="answer-box " id="answer"> </div>
+        </div>
+    </div>
+    <script src="ht.js"></script>
+</body>
+</html>
