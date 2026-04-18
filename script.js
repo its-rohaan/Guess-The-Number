@@ -24,20 +24,20 @@ function guessTheNumber(value) {
  const guessing = guessTheNumber(g);
  document.getElementById(`answer`).innerHTML = guessing;
      })
-// function evenOddCal(value) {
-//  const write = Number(value)
-//      if (write % 2 === 0) {
-//       return "You number is even " + write;
+function evenOddCal(value) {
+ const write = Number(value)
+     if (write % 2 === 0) {
+      return "You number is even " + write;
       
-//      } else {
-//        return"You number is odd " + write;
-//  }
+     } else {
+       return"You number is odd " + write;
+ }
          
-// }
-//  document.getElementById(`checker`).addEventListener(`click`, function(){
-//          const guessing = evenOddCal(g);
-//         document.getElementById(`answer`).innerHTML = guessing;
-//    })
+}
+ document.getElementById(`checker`).addEventListener(`click`, function(){
+         const guessing = evenOddCal(g);
+        document.getElementById(`answer`).innerHTML = guessing;
+   })
 // const readline = require("readline");
 
 // const rl = readline.createInterface({
